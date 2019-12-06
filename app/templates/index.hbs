@@ -1,0 +1,9 @@
+{{model.totalResponse}}
+
+<ol>
+  {{#each this.model as |movie|}}
+    <li>
+      <LinkTo @route="detail" @model={{movie.id}}>{{movie.Title}}<img src={{movie.Poster}} alt="some text" title="some title text"/></LinkTo>
+    </li>
+  {{/each}}
+</ol>

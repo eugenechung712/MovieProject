@@ -1,0 +1,7 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">Navbar</a>
+  <Input @class="form-control mr-sm-2" @type="text" @required="required" @placeholder="Movie Name" @aria-label="Search" @value={{movieSearched}} @enter={{action 'searchVideo' this.movieSearched}} />
+  <button class="btn btn-outline-success my-2 my-sm-0" onClick={{action 'searchVideo' this.movieSearched}}> For Movie</button>
+</nav>
+
+{{yield}}
