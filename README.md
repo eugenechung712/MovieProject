@@ -1,57 +1,36 @@
-# movie-website
+# MovieProject
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Author: Eugene chung
 
-## Prerequisites
+A simple web application which allows user to search for a movie title based upon an existing movie API. The search then returns a list of movies which the user can then select. This in turn returns a detailed description of the movie selected. 
 
-You will need the following things properly installed on your computer.
+## Time spent
+ * Tutorials, research: around 10 hours
+ * Coding required stories: 2 hours
+ * Optional and extras: 2 hours
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+## User stories
 
-## Installation
+### Required
+ * [x] User can search for movies. 
+ * [x] On page load, user can see 3-5 pre-selected movies.
+ * [x] User can click on movie to see a detail page with more information (e.g. ratings, descriptions, author)
 
-* `git clone <repository-url>` this repository
-* `cd movie-website`
-* `npm install`
+### Optional
 
-## Running / Development
+ * [ ] Fade in the poster images
+ * [ ] Have a toggle which switches the search layout between a "grid" view and a "table" style view
+ * [ ] Have an error message if the API fails to load.
+ * [ ] Show a loading state when fetching for a movie
+ * [x] Have a pagination mechanism that allows the user to see more results. Show the total number of results.
+ * [ ] Add a light/dark color theme toggle on the page
+ * [ ] Page is optimized for the viewport/browser size (i.e. scales to mobile & desktop sizes)
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+### Extra
 
-### Code Generators
+ * Navbar is in a component.
+ 
+ 
+## Notes & shoutouts
 
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+ Putting navbar in a component was challenging due to limitations that came about. Functions such as transitionToRoute could not be used directly in the component because it must be used in the controller.
