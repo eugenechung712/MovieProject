@@ -30,7 +30,7 @@ A simple web application which allows user to search for a movie title based upo
 
  * Navbar is in a component.
  
-![](movieprojet.gif)
+![](movieproject.gif)
 GIF created with [LiceCap](https://www.cockos.com/licecap/).
 
 ## Notes & shoutouts
