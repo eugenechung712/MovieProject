@@ -30,7 +30,9 @@ A simple web application which allows user to search for a movie title based upo
 
  * Navbar is in a component.
  
- 
+![](movieProject.gif)
+GIF created with [LiceCap](https://www.cockos.com/licecap/).
+
 ## Notes & shoutouts
 
  Putting navbar in a component was challenging due to limitations that came about. Functions such as transitionToRoute could not be used directly in the component because it must be used in the controller.
